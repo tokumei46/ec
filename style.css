@@ -1,0 +1,136 @@
+body {
+    max-width: 1000px;
+    margin: 0;
+}
+header {
+    margin-bottom: 10px;
+    display: flex;
+}
+header p {
+    margin-left:auto;
+    padding-right: 10px;
+    font-weight: bold;
+}
+header h1 {
+    padding-left: 10px;
+}
+header, footer {
+    background: red;
+    padding: 5px 0;
+}
+footer {
+    text-align: center;
+}
+h1, h3 {
+    margin: 0;
+}
+main {
+    padding: 0 10px;
+}
+.box {
+    border: solid 1px;
+}
+nav {
+    padding-top: 40px;
+}
+nav h3 {
+    text-align: center;
+}
+.close {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    background: green;
+    transition: 0.5s;
+    z-index: 10;
+}
+.open {
+    width: 50%;
+}
+#back {
+    z-index: 5;
+}
+.black {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: black;
+    opacity: 0.8;
+}
+.st {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+}
+.sm {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+}
+.look {
+    animation: anime 3s;
+    visibility: visible;
+    animation-fill-mode: forwards;
+}
+@keyframes anime {
+    33% {
+        opacity: 0.3;
+    }
+    66% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+aside {
+padding: 0 10px;
+}
+aside .box {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+aside img {
+    border-radius: 100%;
+}
+.ex textarea {
+    width: 80%;
+    height: 100px;
+}
+.img {
+    text-align: center;
+}
+.npe {
+    padding: 10px;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        width: 70%;
+    }
+    aside {
+        width: 30%;
+    }
+    warapper {
+        display: flex;
+    }
+    .list {
+    display: flex;
+}
+    #scrolltop, #scrollmenu, #target {
+        display: none;
+    }
+}
